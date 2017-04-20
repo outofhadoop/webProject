@@ -1,0 +1,190 @@
+﻿.showbox_1{
+	
+
+}
+.showbox_1_1{
+	list-style: none;
+}
+.showbox_1_1 span{
+	margin-right:  10px;
+	cursor: pointer;
+}
+.padding_1{
+	border: solid transparent;
+	border-width: 0px 40px 0px 0px; 
+}
+
+.showbox_1_2{
+	list-style: none;
+}
+.showbox_1_2 span{
+	margin-right:  10px;
+	cursor: pointer;
+}
+.showbox_1_3{
+	list-style: none;
+}
+.showbox_1_3 span{
+	margin-right:  10px;
+	cursor: pointer;
+}
+.showbox_1_4 span{
+	margin-right:  10px;
+	cursor: pointer;
+}
+.showbox_1_1 span:hover{
+	color: red;
+}
+.showbox_1_2 span:hover{
+	color: red;
+}
+.showbox_1_3 span:hover{
+	color: red;
+}
+.showbox_1_4 span:hover{
+	color: red;
+}
+.showbox_2{
+	display: none;
+}
+.showbox_3{
+	display: none;
+}
+.showbox_4{
+	display: none;
+}
+.showbox_5{
+	display: none;
+}
+.fillblank_1{
+	float: left;
+	width: 450px;
+	height: 400px;
+	border-right: solid 1px #E5E5E5;
+}
+.fillblank_1_2{
+	float: left;
+	width: 130px;
+	height: 10px;
+	background-color: transparent;
+}
+.cutline_5{
+	width: 400px;
+	height: 5px;
+}
+.link_1{
+	float: left;
+
+}
+.link_1 div{
+	float: left;
+	margin: 5px;
+	margin-left: 15px; 
+}
+.link_1 a{
+	text-decoration: none;
+	color: #998675;
+
+}
+.link_1 a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.fillblank_2{
+	width:1200px; 
+	float: left;
+	margin-left:50px;
+}
+.fillblank_2_1{
+	float: left;
+	background-color: #F16522;
+	width: 100%;
+	color: white;
+
+}
+.fillblank_2_1_1{
+	float: left;
+}
+.fillblank_2_1_2{
+	float: left;
+	font-size: 20px;
+	margin-top: 5px;
+
+}
+.fillblank_2_2{
+	height: 300px;
+	position: relative;
+	border:solid 1px #E8E8E8;
+}
+.fillblank_2_2 div{
+	float: left;
+}
+.fillblank_2_2 span{
+	color: red;
+}
+.fillblank_2_2:hover{
+	cursor: pointer;
+
+}
+.fillblank_2_2_3 img{
+	width: 100%;
+	height: 100%;
+}
+.fillblank_2_2_3{
+	height: 100%;
+	width: 100%;
+}
+.fillblank_2_2_1{
+	border-top: transparent solid 0px;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	font-size: 18px;
+}
+.fillblank_2_2_2{
+	border-top: transparent solid 30px;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	font-size: 12px;
+}
+.fillblank_2_2_8{
+	border-top: transparent solid 30px;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+
+	font-size: 12px;
+}
+.fillblank_2_2_4{
+	border-top: transparent solid 30px;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+
+	font-size: 12px;
+}
+.fillblank_2_2_5{
+	border-top: transparent solid 30px;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+
+	font-size: 12px;
+}
+.fillblank_2_2_6{
+	border-top: transparent solid 30px;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+
+	font-size: 12px;
+}
+.fillblank_2_2_7{
+	border-top: transparent solid 30px;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+
+	font-size: 12px;
+}

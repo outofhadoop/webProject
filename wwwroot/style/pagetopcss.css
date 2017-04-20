@@ -1,0 +1,488 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+img{
+	border: 0;
+}
+div.container{
+	width: 100%;
+	height: 100%;
+}
+.topbar{
+	width: 1330px;
+	background-color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.tianyu{
+	color: white;
+}
+span.blank1{
+	margin-right: 50px;
+}
+a.leader{
+	text-decoration: none;
+	color: white;
+	padding-left: 60px;
+
+}
+a.homelink{
+	text-decoration: none;
+	padding-left: 20px;
+}
+span.blank2{
+	padding-left: 800px;
+}
+a.loginbutton{
+	text-decoration: none;
+	color: white;
+}
+span.verticalline{
+	color: white;
+	padding-left:20px;
+	padding-right: 20px;
+}
+a.registbutton{
+	color:white;
+	text-decoration: none;
+}
+div.cutline{
+	float: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #E5E5E5 ;
+	width: 100%;
+	height: 3px;
+}
+div.cutline_1{
+	float: left;
+	background-color: #E5E5E5 ;
+	width: 100%;
+	height: 0px;
+}
+.noused{
+	float: left;
+}
+div.ecut{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.software{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.infomation{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.english{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.art{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.draw{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.economic{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.sport{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+.filldivblank{
+	width: 320px;
+	height: 110px;
+	float: left;
+}
+div.clear{
+	clear: both;
+}
+.friendslinktext{
+	float: left;
+	padding-bottom: 20px;
+	padding-left: 35%;
+	font-size: 30px;
+}
+.friendslink a{
+	text-decoration: none;
+	color: #666666;
+}
+.friendslink a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.footlan{
+	margin-top: 20px;
+	width: 1330px;
+	background-color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 20px;
+	float: left;
+}
+.owner{
+	color: white;
+	padding-left: 10px;
+}
+.ownerlinktome{
+	color: white;
+	text-decoration: none;
+}
+.specialapart{
+	color: #484E4E;
+	font-size: 22px;
+}
+.madein{
+	color: white;
+	padding-left: 200px;
+	text-decoration: none;
+	padding-right: 20px;
+}
+.madein:hover{
+	text-decoration: underline;
+}
+.getpeople{
+	color: white;
+	padding-left: 20px;
+	text-decoration: none;
+	padding-right: 20px;
+}
+.getpeople:hover{
+	text-decoration: underline;
+}
+.suggest{
+	color: white;
+	padding-left: 20px;
+	text-decoration: none;
+	padding-right: 20px;
+}
+.suggest:hover{
+	text-decoration: underline;
+}
+.leagle{
+	color: white;
+	padding-left: 20px;
+	text-decoration: none;
+	padding-right: 20px;
+}
+.leagle:hover{
+	text-decoration: underline;
+}
+.hantianyu_club_picture{
+	margin-left: 20%;
+}
+.pagelogo{
+	float: left;
+}
+.searchbar{
+	float: left;
+}
+.logosearchbar{
+	width: 1270px;
+	float: left;
+	margin-top: 20px;
+	border-left: transparent solid 40px;
+
+}
+.searchboxbar{
+	float: left;
+	margin-left: 70px;
+	margin-top: 30px;
+}
+.searchboxbar_3{
+	padding-left:  20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px #F16522 solid;
+	
+}
+.search{
+	width: 460px;
+	padding-right: 20px;
+	font-size: 18px;
+	border: 0;
+}
+.aredword{
+	color: #F16522;
+}
+.abigword{
+	font-size: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #F16522;
+}
+.content{
+	width: 1330px;
+}
+
+
+.button_1{
+	color:#F16522 ;
+	font-size: 20px;
+	border: 0;
+	background-color: white;
+	cursor: hand;
+}
+.button_1:hover{
+	color:#FF3030 ;
+	font-size: 20px;
+	border: 0;
+	background-color: white;
+	cursor: pointer;
+}
+.choosebar{
+	float: left;
+	width: 650px;
+	height: auto;
+	overflow: hidden;
+	font-size: 20px;
+	border-top: solid 1px;
+	border-color: #F16522;
+	border-left: 30px solid transparent;
+}
+.newpage{
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.newgame{
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+	float: left;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.newschool{
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	font-size: 25px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.newplay{
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+	float: left;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.newinter{
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 25px;
+	float: left;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.newlinks{
+	background-color: #F16522;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	font-size: 25px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.cutline_2{
+	float: left;
+	width: 650px;
+	border: solid transparent;
+}
+.newline_1{
+	float: left;
+	width: 700px;
+	height: 0px;
+	border: solid #F16522 1px;
+}
+.newlinks:hover{
+	cursor: pointer;
+}
+.newgame:hover{
+	cursor: pointer;
+}
+.newschool:hover{
+	cursor: pointer;
+}
+.newplay:hover{
+	cursor: pointer;
+}
+.newinter:hover{
+	cursor: pointer;
+}
+.cutline_4{
+	width: 650px;
+	border: solid transparent;
+	height: 15px;
+	float: left;
+}
+.leader_1_1{
+	position: absolute;
+	top: 30px;
+	left: 180px;
+	color: white;
+	font-size: 20px;
+	background-color: #404040;
+	filter: opacity(60);
+	width: 60px;
+	overflow: visible;
+}
+.leader_1_1 div{
+	padding:10px;
+	display: none;
+}
+.leader_1_1_1_1{
+	position:absolute;
+	top: 0px;
+	left: 60px;
+	width: 100px;
+	background-color: #404040;
+}
+.leader_1_1_1_1 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.leader_1_1_1_1 a:hover{
+	text-decoration: underline;
+}
+.leader_1_1_2_1{
+	position:absolute;
+	top: 20px;
+	left: 60px;
+	width: 100px;
+	background-color: #404040;
+}
+.leader_1_1_2_1 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.leader_1_1_2_1 a:hover{
+	text-decoration: underline;
+}
+.leader_1_1_3_1{
+	position:absolute;
+	top: 70px;
+	left: 60px;
+	width: 100px;
+	background-color: #404040;
+}
+.leader_1_1_3_1 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.leader_1_1_3_1 a:hover{
+	text-decoration: underline;
+}
+.leader_1_1_4_1{
+	position:absolute;
+	top: 110px;
+	left: 60px;
+	width: 100px;
+	background-color: #404040;
+}
+.leader_1_1_4_1 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.leader_1_1_4_1 a:hover{
+	text-decoration: underline;
+}
+.leader_1_1_5_1{
+	position:absolute;
+	top: 140px;
+	left: 60px;
+	width: 100px;
+	background-color: #404040;
+}
+.leader_1_1_5_1 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.leader_1_1_5_1 a:hover{
+	text-decoration: underline;
+}
+.leader_1_1_6_1{
+	position:absolute;
+	top: 200px;
+	left: 60px;
+	width: 100px;
+	background-color: #404040;
+}
+.leader_1_1_6_1 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.leader_1_1_6_1 a:hover{
+	text-decoration: underline;
+}
+.leader_1_1_7 a{
+	text-decoration: none;
+	color: white;
+
+}
+.leader_1_1_7 a:hover{
+	text-decoration: underline;
+	
+}
+.fillblank_1{
+	border-left: transparent solid 80px;
+}
+.cutline_6{
+	width: 1300px;
+	border: solid 20px transparent;
+	float: left;
+}
+#loginbox{
+	    position: absolute;
+	    display: none;
+	    left: 960px;
+	    top: 30px;	
+	    padding-left: 10px;
+	    padding-bottom: 20px;
+	    border: solid;
+	    width: 250px;
+	    background-color: #E8E8E8;
+}
+#fastlogin{
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #F16522;
+}

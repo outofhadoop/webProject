@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="style\jquery-1.4.min.js"></script>
+<style type="text/css">
+.abc{
+    border: solid;
+    width: 100px;
+    height:100px;
+float: left;
+}
+.ab{
+    border: solid;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+</style>
+</head>
+<body onload="browserRedirect()">
+<div class="abc" id="abc"></div>
+<div class="ab" id="ab"></div>
+</body>
+
+<script type="text/javascript">
+var timer=null;
+var odiv1=document.getElementById("abc");
+var odiv2=document.getElementById("ab");
+            $(document).ready(function(){
+                $("#abc").click(function(){
+                   $("#abc").animate({
+                        height:'+=250px',
+                         width:'+=250px'
+                    });
+                        
+                    });
+
+                }
+                );
+</script>
+</html> 
