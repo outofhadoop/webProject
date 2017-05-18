@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px; 
+        }
+        .content{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        #form_1{
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+            right: 30%;
+            left: 35%;
+        }
+
+        h1{
+            color: white;
+            margin:20px;
+            margin-left: 10%;
+        }
+        #loginbutton_1{
+            position:absolute;
+            left: -20%;
+            right: 20%;
+            width: 49%;
+            border: none;
+            text-decoration: none;
+            font-size: 25px;
+            margin-left: 100px;
+            background-color: #B71E10;
+            color: white;
+}
+table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+        td{
+            font-size: 20px;
+            margin-top: 20px;
+            border: none;
+        }
+        .inp{
+            height: 25px;
+        }
+        .inp_1{
+            height: 25px;
+        }
+        #torf{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" id="content">
+    <img src="pictures/bgpicture_1.jpg">
+   
+            </div>
+            <div id="form_1">
+             <h1>登录页面</h1>
+     <form method="post" action="conndba/check.php">
+                    <table>
+                    <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username" class="inp" id="username"></td>
+                    <td><img src="" id="torf"></td>
+                    </tr>
+                   </table> 
+                   <table>
+                   <tr>
+                   <td>密　码：</td>
+                   <td><input type="password" name="password" class="inp_1" id="password"></td>
+                    </tr>
+                    </table> <span><input type="submit" value="登　录" id="loginbutton_1"></span>
+                    
+            </form>
+            </div>
+            <script type="text/javascript" src="style\jquery-1.4.min.js"></script>
+            <script type="text/javascript">
+                $(".inp").blur(function(){
+                    var xmlhttp;
+                    var username=document.getElementById('username').value;
+                    var password=document.getElementById('password').value;
+                    var pic=document.getElementById('torf');
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    var tof=xmlhttp.responseText;
+    if(tof=='f'){
+        pic.style.display="inline";
+        pic.src="pictures/torf_1.jpg";
+    }
+    if(tof=='t'){
+        pic.style.display="inline";
+       pic.src="pictures/torf.jpg";
+    }
+    }
+  }
+/*xmlhttp.open("GET"," style/getuser.php?username="+username,true);
+xmlhttp.send();*/
+xmlhttp.open("POST","style/getuser.php",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("username="+username);
+
+});
+</script>
+</body>
+</html>

@@ -1,34 +1,30 @@
-﻿<?php
-    session_start();
-    if (!isset($_SESSION['username'])) {
-        header('Location:login.html');
-    }
-?>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <link rel="shortcut icon" href="pictures/favicon.ico"><link rel="Bookmark" href="pictures\favicon.ico">
-
-<link rel="stylesheet" href="style/pagetopcss.css" type="text/css" />
-<link rel="stylesheet" href="style/showbox.css" type="text/css" />
     <meta charset="UTF-8">
     <meta name="keywords" content="韩天宇网,天宇网,天宇网主页,韩天宇自己做的网站">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />    
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" type="text/css" href="style\phoneIndexCss.css" media="only screen and (min-device-width:0px) and (max-device-width:500px)">
     <title>天宇网主页</title>
 </head>
 <body>
-
+<div>
     <div class="container" id="container">
-    <!-- 。。。。。。。。。。。。。。。。。网页头部。。。。。。。。。。。。。。。。。。。。。。。。 -->
-            <div class="topbar" id="topbar">
-                    <a href="index.php" class="homelink"><span class="tianyu">天宇网</span></a><span class="blank1"></span><a href="#" class="leader"><span class="leader_1">导航👆</span></a><span class="blank2"></span><a href="error.html" class="loginbutton">用户:　<?php echo($_SESSION['username']) ; ?></a><span class="verticalline">|</span><a href="conndba/logout.php" class="registbutton">注销</a>
-            </div>
+    <!-- 。。。。。。。。。。。。。。。。。网页导航栏。。。。。。。。。。。。。。。。。。。。。。。。 -->
+    <div id="ptop">
+      <img src="pictures\float.jpg" id="threeLine"><a href="login.html"><img src="pictures\people.jpg" id="people"></a>
+    </div>
         <!-- 。。。。。。。。。。。。。。。。网页内容部分。。。。。。。。。。。。。。。。。。。 -->
         <div class="content" id="content">
                 <div class="logosearchbar">
                         <div class="pagelogo"><a href="index.html"><img src="pictures\pagelogo.png"></a></div>
-                       
-                        <div class="searchboxbar">
+                       <!-- 搜索框部分 start -->
+                        <!-- <div class="searchboxbar">
                                 <div class="searchboxbar_2">
                                     <form action="" method="post">
                                     <div class="searchboxbar_3">
@@ -39,7 +35,8 @@
                                     </div>
                                     </form>
                                 </div>
-                        </div>
+                        </div> -->
+                        <!-- 搜索框部分 end -->
                 </div>
                 <div class="cutline_6"></div>
                 <div class="fillblank_1">
@@ -160,7 +157,7 @@
 
                   </div>
                <div class="cutline_1"></div>
-                <div class="noused"><a href="error.html"><img src="pictures/dongtaitu.gif" alt="这是一个动态图" class="deleborder"></a></div>
+                
         
 
         <!-- 。。。。。。。。。。。。。。。。。 页  脚  部  分。。。。。。。。。。。。 -->
@@ -210,7 +207,25 @@
             <div class="leader_1_1_7"><a href="">反馈</a>
             </div>
     </div>
-         <!-- 。。。。。。。。。。。。。。。。。 This is a manual cutting  line。。。。。。。。。。。。 -->
+           <!-- 。。。。。。。。。。。。。。。。。 This is a manual cutting  line。。。。。。。。。。。。 -->
+        <div id="loginbox">
+                <div id="fastlogin">快捷登录</div>
+            <form method="post" action="conndba/check.php">
+                    <table>
+                    <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username"></td>
+                    </tr>
+                   </table> 
+                   <table>
+                   <tr>
+                   <td>密　码：</td>
+                   <td><input type="password" name="password"></td>
+                    </tr>
+                    </table> <span><input type="submit" value="登录" id="loginbutton_1"></span>
+            </form>
+    </div>
+    </div>
     <script type="text/javascript" src="style\jquery-1.4.min.js"></script>
     <script type="text/javascript" src="style\pageofscript.js"></script>
      <script type="text/javascript" src="style\changetitle.js"></script>

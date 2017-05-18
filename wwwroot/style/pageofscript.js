@@ -87,18 +87,21 @@
 	$(".jquery").click(function(){
 		window.open(href="http://jquery.cuishifeng.cn/index.html");
 	});
+	$(".csslink").click(function(){
+		window.open(href="#");
+	});
 });
 
 $(".leader_1").hover(
 	function(){
 		$(".leader_1").text("导航👇");
 		$(".leader_1_1_1").show();
-		$(".leader_1_1_2").show(50);
-		$(".leader_1_1_3").show(100);
-		$(".leader_1_1_4").show(150);
-		$(".leader_1_1_5").show(200);
-		$(".leader_1_1_6").show(250);
-		$(".leader_1_1_7").show(300);
+		$(".leader_1_1_2").show();
+		$(".leader_1_1_3").show();
+		$(".leader_1_1_4").show();
+		$(".leader_1_1_5").show();
+		$(".leader_1_1_6").show();
+		$(".leader_1_1_7").show();
 	},
 	function(){
 		$(".leader_1_1").hover(
@@ -185,7 +188,7 @@ $(".leader_1").hover(
 	);
 $(".loginbutton").hover(
 	function(){
-		$("#loginbox").show(300);
+		$("#loginbox").show(20);
 	},
 	function(){
 		$("#loginbox").hover(
@@ -193,7 +196,7 @@ $(".loginbutton").hover(
 				$("#loginbox").show();
 			},
 			function(){
-				$("#loginbox").hide(300);
+				$("#loginbox").hide(20);
 			}
 			);
 		$("#loginbox").hide();

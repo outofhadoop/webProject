@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+     <style type="text/css" src="jedate/skin/jedate.css"></style>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px; 
+        }
+        .content{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        #form_1{
+            position: absolute;
+            top: 10%;
+            
+            right: 30%;
+            left: 35%;
+        }
+
+        h1{
+            color: white;
+            margin:20px;
+            margin-left: 20%;
+        }
+        #loginbutton_1{
+            position:absolute;
+            left: -10%;
+            right: 20%;
+            width: 50%;
+            border: none;
+            text-decoration: none;
+            font-size: 25px;
+            margin-left: 100px;
+            background-color: #B71E10;
+            color: white;
+}
+table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+        td{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .inp{
+            height: 25px;
+            width: 200px;
+        }
+        .sex{
+            padding-left: 30px;
+        }
+        form img{
+            display: none;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body onload="setButtonDisabled()">
+    <div class="content" id="content">
+    <img src="pictures/bgpicture_1.jpg">
+   
+            </div>
+            <div id="form_1">
+             <h1>注册页面</h1>
+     <form method="post" action="conndba/check_register.php">
+                    <table>
+                    <tr>
+                    <td>用户名：　</td>
+                    <td><input type="text" name="username" class="inp" id="username" onblur="checkUsername()"></td> 
+                    <td><img src="" id="img_1"><span id="info_1"></span></td>
+                    </tr>
+                   </table> 
+                   <table>
+                   <tr>
+                   <td>密　码：　</td>
+                   <td><input type="password" name="password" class="inp" id="password" onblur="checkPassword()"></td>
+                   <td><img src="" id="img_2"><span id="info_2"></span></td>
+                    </tr>
+                    </table>
+                    <table>
+                   <tr>
+                   <td>重复密码：</td>
+                   <td><input type="password" name="password_1" class="inp" id="password_1" onblur="checkPasswordAgain()"></td>
+                   <td><img src="" id="img_3"><span id="info_3"></span></td>
+                    </tr>
+                    </table>
+                    <table>
+                   <tr>
+                   <td>性　别：　</td>
+                   <td><label><span class="sex"><input type="radio" name="sex" checked="checked" value="男">男　</span></label></td>
+                    <td><label><span class="sex"><input type="radio" name="sex" value="女">女　</span></label></td>
+                    </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>联系方式：</td>
+                            <td><input type="text" name="contact" placeholder="请不要输入过于真实的信息！" class="inp"></td>
+                            <td><img src="" id="img_4"><span id="info_4"></span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>家庭住址：</td>
+                            <td><input type="text" name="hometown" placeholder="请不要输入过于真实的信息！" class="inp"></td>
+                            <td><img src="" id="img_5"><span id="info_5"></span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>生　日：　</td>
+                            <td><input type="text" name="birthday" id="birthday" onclick="laydate()" class="inp" readonly></td>
+                        </tr>
+                    </table>
+
+                     <span><input type="submit" value="注　册" id="loginbutton_1" disabled="true"></span>
+            </form>
+            </div>
+            
+            <script type="text/javascript" src="style\jquery-1.4.min.js"></script>
+            <script type="text/javascript" src="laydate/laydate.js"></script>
+            <script type="text/javascript">
+                    var jq=jQuery.noConflict();
+                    var xmlhttp;                   
+                    // 获取页面元素：
+                         var img_1= document.getElementById("img_1");
+                         var img_2= document.getElementById("img_2");
+                         var img_3= document.getElementById("img_3");
+                         var info_1=document.getElementById("info_1");
+                         var info_2=document.getElementById("info_2");
+                         var info_3=document.getElementById("info_3");
+                         // 定义css和提示信息：
+                        var words_1="inline";
+                        var words_2="display";
+                        var words_3="pictures/torf_1.jpg";
+                        var words_4="pictures/torf.jpg";
+                        var words_5="请输入用户名！";
+                        var words_6="含有非法字符！";
+                        var words_7="";
+                        var words_8="用户名被使用！"
+                        var words_9="密码不一致！"
+                        var words_10="密码不能为空！"
+                        var reg_1=/[\x27|\x22|\x3D|\x3B|\x5B|\x5D|\x5C]/;
+
+                    // 检查用户名是否合法：
+                    function checkUsername(){
+                       var username_1 = document.getElementById("username").value;
+                        // 创建XMLHttp对象xmlhttp：
+                    if(window.XMLHttpRequest){
+                        xmlhttp=new XMLHttpRequest();
+                    }
+                    else{
+                        xmlhttp=new ActiveXObject("Miscrosoft.XMLHTTP");
+                    }
+                       
+                         if (username_1=="")
+                         {
+                        setcss(img_1,info_1,words_1,words_3,words_5);
+                        }
+                       else if(reg_1.test(username_1)){
+                            setcss(img_1,info_1,words_1,words_3,words_6);
+                        }
+                        else if (true) {
+                            xmlhttp.onreadystatechange=function(){
+                            if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                                var tof=xmlhttp.responseText;
+                                if(tof=='f'){
+                                    setcss(img_1,info_1,words_1,words_4,words_7);
+                                }
+                               if(tof=='t'){
+                                    setcss(img_1,info_1,words_1,words_3,words_8);
+                                }
+                            }
+                        }
+                        }
+                        xmlhttp.open("POST","style/getuser.php",true);
+                        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                        xmlhttp.send("username="+username_1);
+                        }
+
+                        // 检查密码是否合法：
+                        function checkPassword(){
+                             var password = document.getElementById("password").value;
+                            if (password=="") {
+                                setcss(img_2,info_2,words_1,words_3,words_10);
+                            }
+                               else if (reg_1.test(password)) {
+                                    setcss(img_2,info_2,words_1,words_3,words_6);
+                                }
+                                else
+                                    setcss(img_2,info_2,words_1,words_4,words_7);
+                        }
+
+                        // 检查密码两次输入是否一致：
+                        function checkPasswordAgain(){
+                            
+                            var password=document.getElementById("password").value;
+                            var password_1=document.getElementById("password_1").value;
+                            if (password!=password_1) {
+                                setcss(img_3,info_3,words_1,words_3,words_9);
+                            }
+                            else
+                                setcss(img_3,info_3,words_1,words_4,words_7);
+                            setRegisterButton();
+                        }
+
+                        // 设置css：
+                        function setcss(obj1,obj2,cs_1,cs_2,cs_3){
+                            //传参数对象 一、图片对象：obj1 和 二、提示信息 obj2
+                        // 设置图像是否可见：
+                       obj1.style.display=cs_1;
+                        // 设置图片：
+                        obj1.src=cs_2;
+                        // 设置文本提示信息：
+                      obj2.innerHTML=cs_3;
+                        }
+
+                        // 设置注册按钮是否可用：
+                        function setRegisterButton(){
+                            var registerButton = document.getElementById("loginbutton_1");
+                            var info_1=document.getElementById("info_1");
+                            var info_2=document.getElementById("info_2");
+                            var info_3=document.getElementById("info_3");
+                            if(info_1.innerHTML=="" && info_2.innerHTML=="" && info_3.innerHTML==""){
+                                    registerButton.disabled=false;
+                                }
+                                else
+                                {
+                                    registerButton.disabled=true;
+                                }
+                        }
+                        function setButtonDisabled(){
+                            var registerButton = document.getElementById("loginbutton_1");
+                            registerButton.disabled = true;
+                        }
+            </script>
+</body>
+</html>

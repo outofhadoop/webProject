@@ -1,0 +1,16 @@
+﻿$("#mouse_1").hover(
+	function(){
+	$("#wImg").fadeIn(300);
+},
+	function(){
+	$("#wImg").fadeOut(300);	
+	}
+);
+$("#mouse_2").hover(
+	function(){
+	$("#wImg_2").fadeIn(300);
+},
+	function(){
+	$("#wImg_2").fadeOut(300);	
+	}
+);

@@ -1,5 +1,5 @@
 ﻿<?php
-//建立数据库连接
+$username=$_POST["username"];
     try{
         $dsn='mysql:host=localhost;dbname=system';
         $pdo=new PDO($dsn, 'root', '1547923100');
@@ -11,4 +11,12 @@
         echo "error:". $e->getMessage() . '<br>';
         exit();
     }
-?>
+ $sql="select * from userinfo where username='{$username}'";
+    $rs=$pdo->query($sql);
+    $result=$rs->fetch(PDO::FETCH_ASSOC);
+    if ($result) {
+        echo 't';
+    }else{
+        echo 'f';
+    }
+    ?>
